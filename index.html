@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #f7f9fc, #dde7f2);
+      font-family: Arial, sans-serif;
+      color: #1f2a44;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 380px;
+      padding: 32px;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 18px 50px rgba(24, 39, 76, 0.12);
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      margin: 0 auto 24px;
+      display: block;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 1.8rem;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #495670;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #d7dee8;
+      border-radius: 12px;
+      font-size: 1rem;
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease;
+    }
+
+    input:focus {
+      border-color: #5b7df3;
+      box-shadow: 0 0 0 4px rgba(91, 125, 243, 0.12);
+    }
+
+    button {
+      width: 100%;
+      padding: 14px 16px;
+      border: none;
+      border-radius: 12px;
+      background: #3c61f5;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #2d49c7;
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .footer a {
+      color: #3c61f5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <img class="logo" src="logo.png" alt="College Logo" />
+    <h1>Sign In</h1>
+
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input id="email" type="email" placeholder="you@example.com" />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter your password" />
+    </div>
+
+    <button type="button">Login</button>
+
+    <div class="footer">
+      <p>Powered by Adhiparasakthi Engineering College</p>
+      <p><a href="#">Forgot password?</a></p>
+    </div>
+  </div>
+</body>
+</html>
